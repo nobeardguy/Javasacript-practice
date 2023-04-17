@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <link rel="icon" href="metaverse-g59e8b3233_640.jpg">
+</head>
+
+<body>
+    <div style="
+        background-color: #add8e6;
+        margin-bottom: 20px;
+        ">Eric</div>
+        
+      <input id="todo-title" type="text">  
+     <button onclick="addTodo()">Add Todo</button>
+ <!--     <div>Get groceries</div>
+     <div>Wash car</div>
+     <div>Cook supper</div> -->
+       
+       <div id="todo-list"></div>
+
+<script>
+      let todos = ['Get groceries', 'Wash car', 'Cook supper']; 
+       
+        render(); 
+      
+   /* todos.forEach(function (todoTitle) {  
+     let element = document.createElement('div');
+     element.innerText = todoTitle;
+     document.body.appendChild(element);
+   });  */ 
+                    
+        
+         function addTodo(){
+     let textbox = document.getElementById('todo-title');
+     let title = textbox.value;
+     todos.push(title);
+
+     render();
+    }  
+  
+       function render(){
+        document.getElementById('todo-list').innerHTML = '';
+
+        todos.forEach(function (todoTitle) {  
+     let element = document.createElement('div');
+     element.innerText = todoTitle;
+     let todoList = document.getElementById('todo-list');
+     todoList.appendChild(element);
+   });  
+      } 
+         
+       console.log('nathan'.toUpperCase())
+       console.log('NATHAN'.toLowerCase());
+   
+     function cmToM(length){
+      console.log(length/100)
+     } 
+     cmToM(2000)
+</script>
+ <hr><br>
+ <a href="/chatgpt.html">ChatGpt</a>
+</body>
+</html>

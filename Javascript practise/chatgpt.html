@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <button id="add-apple">Apple</button>
+    <button id="add-tomato">Tomato</button>
+    <button id="add-eggs">Eggs</button>
+    <button id="add-kamande">Kamande</button>
+    <button id="clear-cart">Clear</button>
+
+    <div id="cart"></div>
+
+    <script>
+      $(document).ready(function () {
+        $("#add-apple").click(function () {
+          $("#cart").append("<div>Apple</div>");
+        });
+        
+         $("#add-kamande").click(function () {
+            $("#cart").append("<div>Kamande</div>");
+         });
+
+        $("#add-tomato").click(function () {
+          $("#cart").append("<div>Tomato</div>");
+        });
+
+        $("#add-eggs").click(function () {
+          $("#cart").append("<div>Eggs</div>");
+        });
+
+        $("#clear-cart").click(function () {
+          $("#cart").empty();
+        });
+      });
+    </script>
+  </body>
+</html>
